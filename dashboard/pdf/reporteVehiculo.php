@@ -36,7 +36,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
     foreach($data as $fila) {
         $pdf->Cell(20, 5, $fila['placa'], 1, 0, "C");
-        $pdf->Cell(30, 5, utf8_decode($fila['nombre']), 1, 0, "C");
+        $pdf->Cell(30, 5, $fila['nombre'], 1, 0, "C");
         $pdf->Cell(20, 5, $fila['modelo'], 1, 0, "C");
         $pdf->Cell(30, 5, $fila['marca'], 1, 0, "C");
         $pdf->Cell(30, 5, $fila['tipo'], 1, 0, "C");
