@@ -11,7 +11,12 @@ $data=$consulta->ctrSeleccionar("cliente");
             <div class="col-lg-12">            
             <button id="btnNuevoC" type="button" class="btn btn-success" data-toggle="modal">Nuevo</button>    
             </div>    
-        </div>    
+        </div> 
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800"></h1>
+            <a href="pdf/reporteCliente.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
+        </div>
 </div>    
     <br>  
 <div class="container">
