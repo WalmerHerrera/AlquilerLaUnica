@@ -21,7 +21,7 @@
       <div class="container-login">
 
         <div class="wrap-login">
-            <center><h2><span>Bienvenidos Alquiler_La_Unica</span></h2></center>
+            <center><h2><span>Bienvenidos Alquiler La Unica</span></h2></center>
             <form class="login-form validate-form" id="formLogin" action="" method="post">
                 
                 <div class="wrap-input100" data-validate = "Usuario incorrecto">
