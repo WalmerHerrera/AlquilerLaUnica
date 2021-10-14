@@ -23,24 +23,22 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
     $pdf->SetFont("Arial", "B", 9);
 
-    $pdf->Cell(20, 10, "placa", 1, 0, "C");
-    $pdf->Cell(30, 10, "nombre", 1, 0, "C");
-    $pdf->Cell(20, 10, "modelo", 1, 0, "C");
+    $pdf->Cell(30, 10, "placa", 1, 0, "C");
+    $pdf->Cell(30, 10, "modelo", 1, 0, "C");
     $pdf->Cell(30, 10, "marca", 1, 0, "C");
     $pdf->Cell(30, 10, "tipo", 1, 0, "C");
-    $pdf->Cell(10, 10, "color", 1, 0, "C");
+    $pdf->Cell(20, 10, "color", 1, 0, "C");
     $pdf->Cell(20, 10, "costoDiario", 1, 0, "C");
     $pdf->Cell(30, 10, "estado", 1, 1, "C");
 
     $pdf->SetFont("Arial", "", 9);
 
     foreach($data as $fila) {
-        $pdf->Cell(20, 5, $fila['placa'], 1, 0, "C");
-        $pdf->Cell(30, 5, $fila['nombre'], 1, 0, "C");
-        $pdf->Cell(20, 5, $fila['modelo'], 1, 0, "C");
+        $pdf->Cell(30, 5, $fila['placa'], 1, 0, "C");
+        $pdf->Cell(30, 5, $fila['modelo'], 1, 0, "C");
         $pdf->Cell(30, 5, $fila['marca'], 1, 0, "C");
         $pdf->Cell(30, 5, $fila['tipo'], 1, 0, "C");
-        $pdf->Cell(10, 5, $fila['color'], 1, 0, "C");
+        $pdf->Cell(20, 5, $fila['color'], 1, 0, "C");
         $pdf->Cell(20, 5, $fila['costoDiario'], 1, 0, "C");
         $pdf->Cell(30, 5, $fila['estado'], 1, 1, "C");
     }
