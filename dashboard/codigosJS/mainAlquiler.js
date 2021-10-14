@@ -26,7 +26,7 @@ $(document).ready(function() {
         $("#fromAlquiler").trigger("reset");
         $(".modal-header").css("background-color", "#28a745");
         $(".modal-header").css("color", "white");
-        $(".modal-title").text("Nuevo cliente");
+        $(".modal-title").text("Nuevo Alquiler");
         $("#modalCRUD").modal("show");
         opcion = 1; //alta
     });
